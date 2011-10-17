@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><?php echo SITE_NAME;?></title>
+</head>
+<body>
+<?php $this->load->view('boxes/header');?>
+    <div>Indian Channels</div>
+    <div>Nepali Channels</div>
+    <div>Pakistani Channels</div>
+    <div>
+    <?php
+    if(!empty($indianArr)){
+        foreach($indianArr as $indian){
+            ?>
+        <img src="<?php echo base_url();?>images/channel/thumb/<?php echo $indian['image'];?>" alt="<?php echo htmlentities($indian['name']);?>"/>        
+        <?php
+        }
+    }
+    ?>
+    </div>
+    
+    <div>
+    <?php
+    if(!empty($nepaliArr)){
+        foreach($nepaliArr as $nepali){
+            ?>
+        <img src="<?php echo base_url();?>images/channel/thumb/<?php echo $nepali['image'];?>" alt="<?php echo htmlentities($nepali['name']);?>"/>
+        <?php
+        }
+    }
+    ?>        
+    </div>
+    
+    <div>
+    <?php
+    if(!empty($pakistaniArr)){
+        foreach($pakistaniArr as $pakistani){
+            ?>
+        <img src="<?php echo base_url();?>images/channel/thumb/<?php echo $pakistani['image'];?>" alt="<?php echo htmlentities($pakistani['name']);?>"/>        
+        <?php
+        }
+    }
+    ?>        
+    </div>
+<?php $this->load->view('boxes/footer');?>
+</body>
+</html>

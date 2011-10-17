@@ -1,0 +1,23 @@
+.anythingFader                         { width: 636px; height: 302px; position: relative;}
+.anythingFader .slidewrapper                { width: 636px; overflow: hidden; height: 302px; position: absolute; top: 0; left: 0; }
+.anythingFader .slidewrapper ul             { width: 9999px; list-style: none; position: absolute; top: 0; left: 0; margin: 0; }
+.anythingFader ul li                   { display: block; float: left; padding: 0; height: 302px; width: 636px; margin: 0; }
+.anythingFader .arrow                  { display: block; height: 200px; width: 67px; background: url(../images/arrows.png) no-repeat 0 0; text-indent: -9999px; position: absolute; top: 22px; cursor: pointer; }
+.anythingFader .forward                { background-position: 0 0; right: -20px; }
+.anythingFader .back                   { background-position: -67px 0; left: -20px; }
+.anythingFader .forward:hover          { background-position: 0 -200px; }
+.anythingFader .back:hover             { background-position: -67px -200px; }
+
+#thumbNav                               { position: relative; top: 15px; text-align: right; }
+#thumbNav a                             { color: black; font: 11px/18px Georgia, Serif; display: inline-block; padding: 2px 8px; height: 20px; margin: 0 5px 0 0; background:  url(../images/silde-nav.png) repeat-x; text-align: center; text-indent:-9999px; width:8px;  }
+#thumbNav a.cur                         { background: url(../images/silde-nav.png) left -24px }
+
+#start-stop                             { background-image: url(../images/play.png); color: white; padding: 2px 5px; width: 40px; text-align: center; position: absolute; right: 4px; top: 228px; }
+#start-stop .playing                    { background-color: red; }
+#start-stop:hover                       { background-image: url(../images/playhover.png); }
+
+/*
+  Prevents
+*/
+.anythingFader .slidewrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
+.anythingFader .slidewrapper ul ul li       { float: none; height: auto; width: auto; background: none; }
