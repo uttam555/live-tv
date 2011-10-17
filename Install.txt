@@ -13,4 +13,4 @@
 QUICK SAMPLES:  The controller has 2 methods ready for demo purposes after you update your config file:
 
 - Do_direct_payment_demo()
-- Get_balance() 
+- Get_balance() cvc
